@@ -4,8 +4,17 @@ Puedes acceder a la página de bienvenida de Nginx desplegada en tu instancia EC
 
 http://54.90.145.108
 
-Abre esta dirección en tu navegador para verificar que Nginx está funcionando correctamente.
+# URLs de demostración del proyecto LEMP Stack
 
----
+# Acceso a Nginx (index.html de prueba):
+http://54.90.145.108/
 
-_Este archivo documenta el acceso web a tu servidor Nginx en AWS EC2._
+# Prueba de PHP (info.php, eliminar tras la prueba):
+http://54.90.145.108/info.php
+
+# Ejemplo de integración PHP-MySQL (lista de tareas):
+http://54.90.145.108/todo_list.php
+
+# (Agrega aquí nuevas URLs si creas más scripts o endpoints)
+
+# Fin de archivo.
