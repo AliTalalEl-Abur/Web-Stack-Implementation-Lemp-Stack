@@ -1,40 +1,41 @@
-# Paso 2 — Instalación de MySQL
 
-# 1. Instalar MySQL Server
+# Step 2 — MySQL Installation
+
+# 1. Install MySQL Server
 sudo apt install mysql-server
 
-# 2. Iniciar sesión en MySQL como root
+# 2. Log in to MySQL as root
 sudo mysql
 
-# 3. Establecer contraseña para root y método de autenticación
+# 3. Set password for root and authentication method
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 
-# 4. Salir de MySQL
+# 4. Exit MySQL
 exit
 
-# 5. Ejecutar script de seguridad
+# 5. Run security script
 sudo mysql_secure_installation
 
-# 6. Responder preguntas del script:
-# - VALIDATE PASSWORD PLUGIN: Y (opcional)
-# - Nivel de validación: 1 (MEDIUM)
-# - Confirmar contraseña: PassWord.1
-# - Confirmar fortaleza: Y
-# - Cambiar contraseña root: Y
-# - Eliminar usuarios anónimos: Y
-# - Eliminar base de datos de prueba: Y
-# - Deshabilitar acceso remoto root: Y
-# - Aplicar reglas: Y
+# 6. Answer script questions:
+# - VALIDATE PASSWORD PLUGIN: Y (optional)
+# - Validation level: 1 (MEDIUM)
+# - Confirm password: PassWord.1
+# - Confirm strength: Y
+# - Change root password: Y
+# - Remove anonymous users: Y
+# - Remove test database: Y
+# - Disable remote root access: Y
+# - Apply rules: Y
 
-# 7. Probar acceso con contraseña
+# 7. Test access with password
 sudo mysql -p
-# Contraseña: PassWord.1
+# Password: PassWord.1
 
-# 8. Salir de MySQL
+# 8. Exit MySQL
 exit
 
-# Notas:
-# - Usar cuentas dedicadas para cada base de datos.
-# - Para aplicaciones PHP, usar mysql_native_password.
+# Notes:
+# - Use dedicated accounts for each database.
+# - For PHP applications, use mysql_native_password.
 
-# Fin del registro de pasos.
+# End of step log.

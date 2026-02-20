@@ -1,20 +1,21 @@
-# Paso 6 — Recuperar datos de una base de datos MySQL con PHP
 
-# 1. Conectarse a MySQL como root
+# Step 6 — Retrieve data from a MySQL database with PHP
+
+# 1. Connect to MySQL as root
 sudo mysql
 
-# 2. Crear base de datos y usuario
+# 2. Create database and user
 CREATE DATABASE example_database;
 CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 GRANT ALL ON example_database.* TO 'example_user'@'%';
 exit
 
-# 3. Probar acceso con el nuevo usuario
+# 3. Test access with the new user
 mysql -u example_user -p
-# Contraseña: PassWord.1
+# Password: PassWord.1
 SHOW DATABASES;
 
-# 4. Crear tabla y agregar datos
+# 4. Create table and add data
 CREATE TABLE example_database.todo_list (
   item_id INT AUTO_INCREMENT,
   content VARCHAR(255),
@@ -27,8 +28,8 @@ INSERT INTO example_database.todo_list (content) VALUES ("and this one more thin
 SELECT * FROM example_database.todo_list;
 exit
 
-# 5. Crear el script PHP para mostrar la lista
-# Guardar como /var/www/projectLEMP/todo_list.php
+# 5. Create the PHP script to display the list
+# Save as /var/www/projectLEMP/todo_list.php
 
 <?php
 $user = "example_user";
@@ -48,7 +49,7 @@ try {
 }
 ?>
 
-# 6. Acceder en el navegador:
+# 6. Access in the browser:
 # http://54.90.145.108/todo_list.php
 
-# Fin del registro de pasos.
+# End of step log.

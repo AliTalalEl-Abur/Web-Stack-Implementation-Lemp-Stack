@@ -1,16 +1,17 @@
-# Paso 3 — Instalación de PHP en LEMP
 
-# Instalar PHP y el módulo para MySQL
+# Step 3 — Installing PHP in LEMP
+
+# Install PHP and the MySQL module
 sudo apt install php-fpm php-mysql
 
-# Verificar la instalación de PHP
+# Verify PHP installation
 php -v
 
-# Archivo de ejemplo para probar PHP con Nginx
-# Guardar como info.php en /var/www/html/info.php
+# Example file to test PHP with Nginx
+# Save as info.php in /var/www/html/info.php
 
 <?php
 phpinfo();
 ?>
 
-# Fin del registro de pasos.
+# End of step log.

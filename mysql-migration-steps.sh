@@ -1,19 +1,20 @@
-# Migración de base de datos MySQL creada en AWS
 
-# 1. Exportar la base de datos desde AWS
-mysqldump -u root -p nombre_base_de_datos > backup.sql
-# (Reemplaza nombre_base_de_datos por el nombre real de tu base de datos)
+# Migration of MySQL database created on AWS
 
-# 2. Descarga backup.sql a tu máquina local y colócalo en esta carpeta.
+# 1. Export the database from AWS
+mysqldump -u root -p database_name > backup.sql
+# (Replace database_name with your actual database name)
 
-# 3. Importar la base de datos en tu entorno local
-mysql -u root -p nombre_base_de_datos < backup.sql
-# (Crea la base de datos local si no existe antes de importar)
+# 2. Download backup.sql to your local machine and place it in this folder.
 
-# 4. Verifica la importación
+# 3. Import the database into your local environment
+mysql -u root -p database_name < backup.sql
+# (Create the local database if it does not exist before importing)
+
+# 4. Verify the import
 mysql -u root -p
 SHOW DATABASES;
-USE nombre_base_de_datos;
+USE database_name;
 SHOW TABLES;
 
-# Fin de instrucciones.
+# End of instructions.

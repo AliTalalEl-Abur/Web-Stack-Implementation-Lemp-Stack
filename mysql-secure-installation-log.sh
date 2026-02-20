@@ -1,17 +1,18 @@
-# Script de seguridad de MySQL
-# Este archivo documenta el uso del script mysql_secure_installation y las respuestas recomendadas
+
+# MySQL Security Script
+# This file documents the use of the mysql_secure_installation script and the recommended answers
 
 sudo mysql_secure_installation
 
-# Respuestas recomendadas:
-# - VALIDATE PASSWORD PLUGIN: Y (opcional)
-# - Nivel de validación: 1 (MEDIUM)
-# - Confirmar contraseña: PassWord.1
-# - Confirmar fortaleza: Y
-# - Cambiar contraseña root: Y
-# - Eliminar usuarios anónimos: Y
-# - Eliminar base de datos de prueba: Y
-# - Deshabilitar acceso remoto root: Y
-# - Aplicar reglas: Y
+# Recommended answers:
+# - VALIDATE PASSWORD PLUGIN: Y (optional)
+# - Validation level: 1 (MEDIUM)
+# - Confirm password: PassWord.1
+# - Confirm strength: Y
+# - Change root password: Y
+# - Remove anonymous users: Y
+# - Remove test database: Y
+# - Disable remote root access: Y
+# - Apply rules: Y
 
-# Fin del registro
+# End of log

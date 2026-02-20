@@ -1,17 +1,18 @@
-# Paso 5 — Prueba de PHP con Nginx
 
-# 1. Crear archivo info.php en el directorio raíz
+# Step 5 — Test PHP with Nginx
+
+# 1. Create info.php file in the root directory
 sudo nano /var/www/projectLEMP/info.php
 
-# Contenido del archivo:
+# File content:
 <?php
 phpinfo();
 ?>
 
-# 2. Acceder en el navegador:
+# 2. Access in the browser:
 # http://54.90.145.108/info.php
 
-# 3. Eliminar el archivo por seguridad
+# 3. Delete the file for security
 sudo rm /var/www/projectLEMP/info.php
 
-# Fin del registro de pasos.
+# End of step log.

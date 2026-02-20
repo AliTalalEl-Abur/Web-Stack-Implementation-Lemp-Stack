@@ -1,26 +1,27 @@
-# Registro de comandos ejecutados para la instalación de MySQL
-# Este archivo documenta los comandos ejecutados en la consola de AWS para instalar y asegurar MySQL
 
-# Instalación de MySQL
+# Log of commands executed for MySQL installation
+# This file documents the commands run in the AWS console to install and secure MySQL
+
+# MySQL installation
 sudo apt install mysql-server
 
-# Iniciar sesión en MySQL
+# Log in to MySQL
 sudo mysql
 
-# Establecer contraseña para root
+# Set password for root
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 
-# Salir de MySQL
+# Exit MySQL
 exit
 
-# Ejecutar script de seguridad
+# Run security script
 sudo mysql_secure_installation
 
-# Probar acceso con contraseña
+# Test access with password
 sudo mysql -p
-# Contraseña: PassWord.1
+# Password: PassWord.1
 
-# Salir de MySQL
+# Exit MySQL
 exit
 
-# Fin del registro
+# End of log

@@ -1,20 +1,21 @@
-# Instrucciones para migrar base de datos y archivos PHP desde AWS
 
-# 1. Migrar base de datos MySQL
-# En tu instancia AWS, ejecuta:
-mysqldump -u root -p nombre_base_de_datos > backup.sql
-# Descarga backup.sql a tu máquina local y colócalo en esta carpeta.
+# Instructions to migrate database and PHP files from AWS
 
-# Para importar la base de datos en tu entorno local:
-mysql -u root -p nombre_base_de_datos < backup.sql
+# 1. Migrate MySQL database
+# On your AWS instance, run:
+mysqldump -u root -p database_name > backup.sql
+# Download backup.sql to your local machine and place it in this folder.
 
-# 2. Migrar archivos PHP
-# Usa SCP o SFTP para copiar los archivos PHP desde AWS a tu máquina local.
-# Ejemplo con SCP:
-scp ubuntu@ip-aws:/ruta/a/archivo.php ./
-# Repite para todos los archivos PHP y colócalos en esta carpeta.
+# To import the database into your local environment:
+mysql -u root -p database_name < backup.sql
 
-# 3. Verifica la migración
-# Accede a los archivos PHP y prueba la conexión a la base de datos importada.
+# 2. Migrate PHP files
+# Use SCP or SFTP to copy PHP files from AWS to your local machine.
+# Example with SCP:
+scp ubuntu@ip-aws:/path/to/file.php ./
+# Repeat for all PHP files and place them in this folder.
 
-# Fin de instrucciones.
+# 3. Verify the migration
+# Access the PHP files and test the connection to the imported database.
+
+# End of instructions.
