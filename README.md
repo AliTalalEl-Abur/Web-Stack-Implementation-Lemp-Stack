@@ -1,32 +1,33 @@
+
 # Project 103 - LEMP Stack (Nginx + MySQL + PHP)
 
-Este repositorio contiene los archivos de configuración, scripts de ejemplo y documentación para la implementación de un stack LEMP en una instancia EC2 de AWS.
+This repository contains configuration files, example scripts, and documentation for deploying a LEMP stack on an AWS EC2 instance.
 
 ## Live URLs
-- Nginx (index.html de prueba): http://54.90.145.108/
-- PHP info (eliminar tras la prueba): http://54.90.145.108/info.php
-- PHP + MySQL (lista de tareas): http://54.90.145.108/todo_list.php
+- Nginx (test index.html): http://54.90.145.108/
+- PHP info (remove after testing): http://54.90.145.108/info.php
+- PHP + MySQL (to-do list): http://54.90.145.108/todo_list.php
 
 ## EC2 Notes
-- Nginx sirve el contenido desde `/var/www/projectLEMP`.
-- PHP-FPM procesa los archivos `.php` y se comunica con Nginx mediante FastCGI.
-- MySQL almacena los datos de la aplicación y se accede desde PHP usando PDO.
-- Asegúrate de que el Security Group de EC2 permite tráfico entrante TCP en el puerto 80 desde tu IP.
+- Nginx serves content from `/var/www/projectLEMP`.
+- PHP-FPM processes `.php` files and communicates with Nginx via FastCGI.
+- MySQL stores application data and is accessed from PHP using PDO.
+- Make sure the EC2 Security Group allows incoming TCP traffic on port 80 from your IP.
 
-## Archivos principales
-- nginx-default.conf: Configuración de Nginx por defecto
-- nginx-index.html: Página de bienvenida de Nginx
-- php-installation-steps.sh: Pasos para instalar PHP
-- mysql-installation-steps.sh: Pasos para instalar y asegurar MySQL
-- mysql-php-connection-example.php: Ejemplo de conexión PHP-MySQL
-- todo_list.php: Ejemplo de integración PHP-MySQL (lista de tareas)
-- php-mysql-todo-steps.sh: Pasos para la integración PHP-MySQL
-- nginx-url.txt: URLs de demostración del proyecto
+## Main Files
+- nginx-default.conf: Default Nginx configuration
+- nginx-index.html: Nginx welcome page
+- php-installation-steps.sh: Steps to install PHP
+- mysql-installation-steps.sh: Steps to install and secure MySQL
+- mysql-php-connection-example.php: PHP-MySQL connection example
+- todo_list.php: PHP-MySQL integration example (to-do list)
+- php-mysql-todo-steps.sh: Steps for PHP-MySQL integration
+- nginx-url.txt: Project demonstration URLs
 
-## Notas adicionales
-- El archivo info.php debe eliminarse tras la prueba, ya que expone información sensible del entorno PHP.
-- Puedes ampliar este proyecto agregando más scripts PHP, configuraciones de Nginx o ejemplos de bases de datos.
+## Additional Notes
+- The info.php file should be deleted after testing, as it exposes sensitive PHP environment information.
+- You can expand this project by adding more PHP scripts, Nginx configurations, or database examples.
 
 ---
 
-_Este README resume la estructura y los accesos principales del proyecto LEMP Stack desplegado en AWS EC2._
+_This README summarizes the structure and main access points of the LEMP Stack project deployed on AWS EC2._
